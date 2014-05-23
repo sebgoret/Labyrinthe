@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 from tkinter import *
 from time import sleep
@@ -17,8 +18,7 @@ class Labyrinthe():
         self.objets=[]
         self.parcours=[]
         self.fenetre.bind_all("<Key>", self.onKeyPressed)
-        
-    
+
     def afficher(self):
         s=''
         for d,x1,y1,x2,y2 in self.parcours:
@@ -384,7 +384,6 @@ if __name__=='__main__':
         if sys.argv[1]=="-demo":
             if os.path.isfile(sys.argv[2]):
                 print("Mode Démo :\n")
-                
                 with open(random_lab("map.lab", 0)) as fichier:
                     lignes=fichier.readlines()
                     hauteur=(len(lignes)//2+2)*50
