@@ -96,9 +96,9 @@ class Labyrinthe():
     
     
     def onKeyPressed(self, k):
-        if(k.keysym=='q' or k.keysym=='Left'):
+        if(k.keysym=='a' or k.keysym=='Left'):
             self.deplacer('G')
-        if(k.keysym=='z' or k.keysym=='Up'):
+        if(k.keysym=='w' or k.keysym=='Up'):
             self.deplacer('H')
         if(k.keysym=='s' or k.keysym=='Down'):
             self.deplacer('B')
